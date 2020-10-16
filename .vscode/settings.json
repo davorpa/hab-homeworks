@@ -1,0 +1,11 @@
+{
+    "spellright.language": ["en", "es"],
+    "spellright.documentTypes": [
+        "latex",
+        "plaintext",
+        "html",
+        "html5",
+        "css",
+        "javascript"
+    ]
+}
