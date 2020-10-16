@@ -10,14 +10,17 @@ Made with ❤️‍🔥 from 🇪🇸.
 
 |    Section     |    SKILL        |          |
 |:--------------:|----------------:|:--------:|
-|  Class notes                    ||    🚧    |
+| [Class notes][sec1.0]           ||    🚧    |
 |                | HTML            |    🚧    |
 |                | CSS3            |    🚧    |
 |                | JAVASCRIPT ES6  |    🔜    |
-| Exercises                       ||    🚧    |
+| [Exercises][sec2.0]             ||    🚧    |
 |                | HTML            |    🚧    |
 |                | CSS3            |    🚧    |
 |                | JAVASCRIPT ES6  |    🔜    |
+
+[sec1.0]: ./classnotes "Ir a la sección"
+[sec2.0]: ./exercises  "Ir a la sección"
 
 *Legend:*
 - 🔜 : Comming soon.
