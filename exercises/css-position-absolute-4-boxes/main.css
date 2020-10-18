@@ -1,0 +1,79 @@
+@import url(../assets/common/reset.css);
+@import url(../assets/common/base.css);
+
+/* Definimos las variables CSS */
+:root {
+    --size1: 200px;
+    --size2: 150px;
+    --size3: 100px;
+    --size4: 70px;
+}
+
+.box-containter {
+    display: block;
+    position: relative;
+    min-height: var(--size1);
+}
+
+.box {
+    position: absolute;
+    border: 3px solid black;
+    background: gray;
+
+    font-size: 2em;
+    font-weight: 700;
+
+    /* Centrado absoluto horizontal/vertical */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box1 {
+    width: var(--size1); height: var(--size1);
+    background-color: khaki;
+    top: 0;
+    left: 0;
+}
+.box2 {
+    width: var(--size2); height: var(--size2);
+    background-color: darkorange;
+    /* .box1 + gap respectivo  */
+    top: calc(
+        var(--size1)
+        - var(--size2) + var(--size2) / 4);
+    left: calc(
+        var(--size1)
+        - var(--size2) / 5);
+}
+.box3 {
+    width: var(--size3); height: var(--size3);
+    background-color: pink;
+    /* .box1 + .box2 + gap respectivo  */
+    top: calc(
+        var(--size1)
+        - var(--size2) + var(--size2) / 4
+        - var(--size3) + var(--size3) / 2.5);
+    left: calc(
+        var(--size1)
+        + var(--size2) - var(--size2) / 5
+        - var(--size3) / 2.5);
+    z-index: -1;
+}
+.box4 {
+    width: var(--size4); height: var(--size4);
+    background-color: mediumseagreen;
+    /* .box1 + .box2 + .box3 + gap respectivo  */
+    top: calc(
+        var(--size1)
+        - var(--size2) + var(--size2) / 4
+        - var(--size3) + var(--size3) / 2.5
+        + var(--size3)
+        - var(--size4) / 1.5);
+    left: calc(
+        var(--size1)
+        + var(--size2) - var(--size2) / 5
+        - var(--size3) / 2.5
+        + var(--size3)
+        - var(--size4) / 3);
+}
