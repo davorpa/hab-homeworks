@@ -1,3 +1,19 @@
 @import url(../assets/common/reset.css);
 @import url(../assets/common/base.css);
 
+:root {
+    --cell-size: 70px;
+}
+table {
+    /* centrar horizontalmente */
+    margin: 0 auto;
+    /* colapsar bordes */
+    border-collapse: collapse;
+    background-color: gold;
+}
+table td,
+table th {
+    width: var(--cell-size);
+    height: var(--cell-size);
+    border: 2px solid black;
+}
