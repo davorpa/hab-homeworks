@@ -17,18 +17,21 @@
 
   */
 
+    .sol-grid { display: grid; }
+
+    .sol-1 { grid-template-rows: repeat(2, 1fr); }
+    .sol-1 > :first-child { order: 2; }
+    .sol-1 > :last-child  { order: 1; }
+
   </style>
 
 </head>
 <body>
 
-  <div>
-
-    <p>Párrafo 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, provident. Et corporis, obcaecati enim incidunt nulla corrupti saepe officiis quas.</p>
-
-    <p>Párrafo 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, provident. Et corporis, obcaecati enim incidunt nulla corrupti saepe officiis quas.</p>
-
-  </div>
+    <div class="sol-1 sol-grid">
+      <p>Párrafo 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, provident. Et corporis, obcaecati enim incidunt nulla corrupti saepe officiis quas.</p>
+      <p>Párrafo 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, provident. Et corporis, obcaecati enim incidunt nulla corrupti saepe officiis quas.</p>
+    </div>
 
 </body>
 </html>
