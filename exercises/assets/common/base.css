@@ -1,9 +1,11 @@
-/*
-    Estilos de texto, color, etc.
-*/
+/* ======================
+
+Estilos de texto, color, etc.
+
+====================== */
 
 body {
-    margin: 20px;
+    margin: 1rem;
     font-family: monospace;
     font-size: 16px;
     line-height: 1.1;

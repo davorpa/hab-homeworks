@@ -1,0 +1,56 @@
+
+/* ======================
+
+Section Layout
+
+====================== */
+
+.kg-solution-grid {
+    display: grid;
+    grid-template-columns: repeat(var(--kg-grid-cols), 1fr);
+    gap: 1rem;
+    background: var(--kg-grid-bg);
+    border: 10px solid var(--kg-grid-border-color);
+    border-radius: 1rem;
+}
+
+.kg-solution-grid.sticked-head .header {
+    position: sticky;
+    top: 0;
+    opacity: 0.9;
+}
+
+.kg-solution {
+    border: 0 solid var(--kg-grid-cell-border-color);
+    border-width: 0 2px 2px 2px;
+    border-radius: 1rem;
+    background: var(--kg-grid-cell-bg) url(papiro-2.jpg) 50% 50%;
+}
+
+.kg-solution .header {
+    text-align: center;
+    margin: 2rem;
+    border: 0 double var(--kg-grid-cell-border-color);
+    border-width: 5px 3px 0 3px;
+    margin: 1rem;
+    padding: 1rem;
+    background: var(--kg-grid-cell-header-bg);
+    color: var(--kg-grid-cell-header-color);
+    border-radius: 0 0 1rem 1rem;
+}
+
+.kg-solution .body {
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+.kg-solution .footer {
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+/* responsive image */
+.kg-solution .body img {
+    max-width: 100%;
+    height: auto;
+}

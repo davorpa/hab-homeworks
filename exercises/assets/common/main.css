@@ -1,0 +1,12 @@
+/* =============================
+DAVORPATECH KG-CSS-FRAMEWORK
+
+2020 © All rights reserved
+================================ */
+
+/* Modules import */
+
+@import url(variables.css);
+@import url(reset.css);
+@import url(layout.css);
+@import url(base.css);

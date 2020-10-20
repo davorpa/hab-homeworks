@@ -1,0 +1,32 @@
+
+/* ======================
+
+Declaramos las variables y valores por defecto
+aplicables a todo el documento HTML
+
+====================== */
+:root {
+
+--kg-color-01: darkkhaki;
+--kg-color-02: khaki;
+--kg-color-03: cornsilk;
+--kg-color-11: rebeccapurple;
+--kg-color-21: cadetblue;
+--kg-color-22: rgb(78, 136, 139);
+
+--kg-color-31: rgb(230, 230, 200, 0.6);
+--kg-color-32: rgb(150, 150, 150, 0.8);
+--kg-color-33: rgb(230, 230, 230, 0.6);
+--kg-color-34: rgb(70, 70, 40);
+
+
+--kg-grid-cols: 2;
+
+--kg-grid-bg: var(--kg-color-21);
+--kg-grid-border-color: var(--kg-color-22);
+--kg-grid-cell-bg: var(--kg-color-03);
+--kg-grid-cell-border-color: var(--kg-color-01);
+--kg-grid-cell-header-bg: var(--kg-color-34);
+--kg-grid-cell-header-color: var(--kg-color-02);
+
+}
