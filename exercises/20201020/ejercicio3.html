@@ -12,35 +12,54 @@
     y SIEMPRE usando variables, haz que el texto «Hola mundo»
     aparezca escrito todo en mayúsculas, de color verde
     con un tamaño de 50 pixels y fondo rosa.
-    
+
     Consigue, además, que mientras el cursor esté
     sobre el texto, el fondo pase a ser amarillo
     el texto recupere su estado actual de «no-todo-mayúsculas»
     y se desplace un poquito hacia abajo.
 
     Te dejo algunas pistas sobre el tema de variables.
-    
+
   */
 
     :root{
-      
-      --color:red;
-      --size: 24px;
-    
-    }
+
+        --color:red;
+        --fondo: pink;
+        --size: 24px;
+        --text-transform: uppercase;
+        --transform: none;
+
+        --color-hover: var(--color);
+        --fondo-hover: yellow;
+        --text-transform-hover: none; /* initial | inherit ??? NO FUNCIONA??? */
+        --transform-hover: translateY(5px);
+
+        }
 
     h1{
-      color: var(--color);
-      font-size: calc(2 * var(--size));
+        color: var(--color);
+        font-size: calc(2 * var(--size));
+
+        text-transform: var(--text-transform);
+        background-color: var(--fondo);
+        transform: var(--transform);
     }
-  
+
+    h1:hover {
+        --color: var(--color-hover);
+        --fondo: var(--fondo-hover);
+        --text-transform: var(--text-transform-hover);
+        --transform: var(--transform-hover);
+    }
+
   </style>
-  
-  
+
+
   </head>
 <body>
-  
+
   <h1>Hola mundo</h1>
-  
+
 </body>
 </html>
