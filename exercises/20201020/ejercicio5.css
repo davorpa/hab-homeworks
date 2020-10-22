@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;200;300;400;500;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+
+/* ======================
+
+Importamos hoja de estilos comun (reset, normalize...)
+
+====================== */
+
+@import url("../assets/common/main.css");
+
+
+/* ======================
+
+Declaramos las variables y valores por defecto
+aplicables a todo este documento HTML
+
+====================== */
+
+:root {
+    --color-1: #ebdbdb;
+    --color-1c: #570000;
+
+    --bodybox-bg: rgba(200, 180, 150, 0.85);
+    --bodybox-margin: 1rem;
+    --bodybox-padding: 1.5rem;
+    --bodybox-radius: 1rem;
+    --bodybox-radius-tl: 90%;
+}
+
+
+
+/* ======================
+
+COMPONENTES
+
+====================== */
+
+
+
+
+/* ======================
+
+GENERALES
+
+====================== */
+
+html {
+    height: 100vh; /* para que extienda body background cover al viewport */
+}
+
+body {
+    background-color: var(--color-1);
+    color: var(--color-1c);
+
+    font-family: 'Arima Madurai', cursive;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 400;
+
+    margin: var(--bodybox-margin);
+    /* extendemos background del vignedo */
+    background: transparent url(assets/background.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.header, .main, .footer {
+    background: var(--bodybox-bg);
+    padding: calc(var(--bodybox-padding) / 2) var(--bodybox-padding);
+}
+
+
+
+/* ======================
+
+CABECERA
+
+====================== */
+
+.header {
+    /* flex para centrado absoluto independientemente del contenido */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    /* empezamos a redondear la caja de fondo del body */
+    border-radius: var(--bodybox-radius-tl) var(--bodybox-radius) 0 0;
+}
+
+.header .logo {
+    /* logo responsivo a lo alto */
+    height: 9.5rem;
+    width: auto;
+
+    font-family: 'Carter One', cursive;
+
+    /* redondeamos y sombreamos */
+    border-radius: 50%;
+    box-shadow: 0 0 1rem .5rem rgb(255, 187, 0.1);
+}
+
+.header .site-name {
+    /* push right total usando flex + text-align */
+    flex-grow: 1;
+    text-align: right;
+
+    margin: 0 0 0 calc(var(--bodybox-padding) / 2);
+
+    font-size: 2em;
+    font-family: 'Carter One', cursive;
+    text-shadow: 0 0 1rem rgba(255, 255, 255);
+}
+
+
+
+/* ======================
+
+CUERPO
+
+====================== */
+
+.main {
+    text-align: justify;
+}
+
+
+
+/* ======================
+
+FALDON PIE
+
+====================== */
+
+.footer {
+    /* terminamos de redondear la caja de fondo del body */
+    border-radius: 0 0 var(--bodybox-radius) var(--bodybox-radius);
+}
+
+.footer .copy {
+    text-align: center;
+    font-weight: 900;
+}
+
+
+
+/* ======================
+
+UTILIDADES
+
+====================== */
+
+.circled {
+    border-radius: 50%;
+}
+
+.img-responsive {
+    min-width: 100%;
+    height: auto;
+}
+
+/*
+Floatings
+*/
+.flt-l { float: left; }
+.flt-r { float: right; }
+.crl   { clear: both; }
+.crl-l { clear: left; }
+.crl-r { clear: right; }
+
+/*
+Floatings. CLEARFIX 2010
+*/
+.crlfx:before, .crlfx:after {
+    content: " ";
+    display: table;
+}
+.crlfx:after {
+    clear: both;
+}
+/** IE 6/7 hack: force to trigger hasLayout */
+.crlfx { *zoom: 1; }
